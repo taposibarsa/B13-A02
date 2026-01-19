@@ -256,11 +256,18 @@ header{
     font-weight: 800;
     padding-bottom: 40px;
 }
+.card-container{
+    justify-content: space-between;
+    max-width: 100%;
+    gap: 30px;
+    margin-bottom: 50px;
+}
 .featured-card{
     padding: 0 20px 20px 20px;
     border-radius: 25px;
     background-color: #250D44;
     max-width: 32%;
+    min-width: 280px;
 }
 .video{
      width: 100%;
@@ -274,12 +281,7 @@ header{
 .featured-card > * {
     padding-bottom: 20px;
 }
-.card-container{
-    justify-content: space-between;
-    max-width: 100%;
-    gap: 30px;
-    margin-bottom: 50px;
-}
+
 
 .alex-container{
     background-color: #250D44;
@@ -310,7 +312,6 @@ header{
 .footer-content{
     margin: 0 auto;
     padding-top: 30px;
-    border: 1px solid white;
     text-align: center;
 }
 .footer-icon{
@@ -426,11 +427,4 @@ header{
     }
     
 } 
-
-
-/* media responsive for desktop
-@media screen and (min-width:992px) and (max-width:1600px){
-    .hero-content{width: 100%;}
-
-} */
 
