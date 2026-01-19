@@ -4,7 +4,6 @@
 .inter-font{
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  font-weight: weight;
   font-style: normal;
 }
 *{
@@ -25,6 +24,9 @@
 }
 .white-text{
     color: #ffffff;
+}
+.neon-text{
+    color: #00FF88;
 }
 .p-size{
     font-size: 1rem;
@@ -70,7 +72,7 @@
     transition-delay: .3s;
 }
 header{
-    border-bottom: 1px solid #9100F8;
+    border-bottom: 1px solid #412567;
 }
 /* hamburger icon hidden on desktop */
 .ham-btn{
@@ -144,6 +146,37 @@ header{
     background: transparent;
 }
 
+/* about section */
+.about{
+    background-color: #1A0B2E;
+    padding: 50px 200px 120px 200px;
+
+
+}
+.about-content{
+    margin: 0 auto;
+    text-align: center;
+
+}
+.about-content h2{
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.content{
+    padding: 20px 50px 80px 50px;
+    border-bottom: 1px solid #412567;
+}
+.about-content p{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.counter{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+}
 /* media responsive for small device */
 @media screen and (max-width:576px){
     .hide{
@@ -158,18 +191,38 @@ header{
     }
     .hero-content{width: 100%;
     margin-bottom: 30px;
-}
+    }
+    .about{
+        padding: 16px;
+    }
+    .content{
+    padding: 20px;
+    }
+    .counter{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        margin-top: 16px;
+    }
     
 }
 
-/* media responsive for medium device
-@media  and (min-width:576px) and (max-width:992px) {
+/* /* media responsive for medium device */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .about{
+           padding: 30px;
+    }
+    .content{
+    padding: 20px;
+    }
+    .counter{
+        width: 100%;
+        gap: 20px;
+        margin-top: 15px;
+    }
+} 
 
-    .hero-content{width: 100%;}
-}
 
-
-media responsive for desktop
+/* media responsive for desktop
 @media screen and (min-width:992px) and (max-width:1600px){
     .hero-content{width: 100%;}
 
