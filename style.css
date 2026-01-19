@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+.inter-font{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* shared style */
+.container{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.display-flex{
+    display: flex;
+}
+.neon-text{
+    color: #00FF88;
+}
+.white-text{
+    color: #ffffff;
+}
+.p-size{
+    font-size: 1rem;
+}
+
+/* header section */
+.navbar{
+    justify-content: space-around;
+    padding: 30px;
+    background-color: #412567;
+}
+.menu-link{
+    list-style: none;
+    gap: 32px;
+    /* align-items: center; */
+    padding-top: 7px;
+    
+}
+.menu-link a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.menu-link a:hover{
+    font-weight: 700;
+    border-bottom: 2px solid #ffffff;
+    transition: border-bottom .3s ease;
+}
+.btn-gradient{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffffff;
+    padding: 12px 16px;
+    text-align: center;
+    border: none;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
+}
+.btn-gradient:hover{
+    font-weight: 700;
+    transition-delay: .3s;
+}
+header{
+    border-bottom: 1px solid #9100F8;
+}
